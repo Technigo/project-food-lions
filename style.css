@@ -1,0 +1,37 @@
+.restaurant-container {
+  background-color: lightyellow;
+  display: flex;
+  margin: 0;
+  
+}
+
+.card {
+  flex-direction: column;
+  width: 100%;
+  background-color: yellow;
+  justify-content: center;
+  margin: 16px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+
+}
+
+/* Media Queries Bigger Screens */
+@media(min-width: 650px) {
+  .restaurant-container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 25%;
+}
+
+
+@media(min-width: 1025px) {
+
+}
