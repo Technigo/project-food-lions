@@ -6,4 +6,6 @@ fetch('https://developers.zomato.com/api/v2.1/search?entity_id=91&entity_type=ci
     })
     .then(info => {
         console.log(info)
+
+
     })
