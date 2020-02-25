@@ -5,12 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <h1>Pizza in Dublin</h1>
+    </header>
+    <section class="main-container">
+        <div class="selecting">
+            <div class="reveal-sort" id="showSort">
+                <p>Sort</p>
+            </div>
+            <div class="hidden" id="sort-options">
+                <input type="radio" id="highestFirst" name="sort-option">
+                <label for="highestFirst">Most Expensive</label>
+                <input type="radio" id="lowestFirst" name="sort-option">
+                <label for="lowestFirst">Least Expensive</label>
+            </div>
+        </div>
+        <div class="restaurant-container" id="restaurants"></div>
+    </section>
 
+    <section>
+        <input type="radio" name="delivery" id="hasDelivery" value="delivery" />
+        <label for="example1">Delivery</label>
+        <input type="radio" name="delivery" id="hasTakeaway" value="Takeaway" />
+        <label for="example1">Takeaway</label>
+    </section>
+    <section>
+        <input type="radio" name="delivery" id="priceLow" value="priceLow" />
+        <label for="example1">Price Low</label>
+        <input type="radio" name="delivery" id="priceMedium" value="priceMedium" />
+        <label for="example1">Price Medium</label>
+        <input type="radio" name="delivery" id="priceHigh" value="priceHigh" />
+        <label for="example1">Price High</label>
+    </section>
     <div id="restaurants"></div>
     
+    <script src="script.js"></script>
     <script src="script.js"></script>
 </body>
 
