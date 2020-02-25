@@ -27,14 +27,15 @@ const sortPrice = (info) => {
 };
 
 const accordion = () => {
-    document.getElementById('sort-options').classList.toggle('options-shown')
+    document.getElementById('sort-options').classList.toggle('shown')
+    document.getElementById('showSort').classList.toggle('minus')
 }
 
 document.getElementById('showSort').onclick = accordion
 
 
 fetch('https://developers.zomato.com/api/v2.1/search?entity_id=91&entity_type=city&cuisines=82',
-    { headers: { 'user-key': "8e3b45cc8d20404f3751e42d9cef2e88" } }
+    { headers: { 'user-key': "fd4251c5054a8885892b370d31bb5c07" } }
 )
     .then(response => {
         return response.json()

@@ -25,22 +25,28 @@ img {
   justify-content: space-between;
   width:20%;
 }
+.reveal-sort:after {
+  content: '➕'
+}
+.minus:after {
+  content: '➖'
+}
 
-.sort-options {
-  max-height: 0;
+.hidden {
+  height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  transition: all .7s ease-in-out;
 }
 
-.options-shown {
-  max-height: 200;
+
+.shown {
+  height: 200px;
+  
 }
 
-.options-shown + .sort-options {
-  max-height: 200px;
-  overflow: visible;
-}
 
 /* Media Queries Bigger Screens */
 @media(min-width: 650px) {
