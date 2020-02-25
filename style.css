@@ -3,6 +3,7 @@
 body {
   font-family: 'Nunito'
 }
+
 .restaurant-container {
   display: flex;
   flex-direction: column;
@@ -36,11 +37,21 @@ img {
   width: 100%;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.selecting {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
 .reveal-sort {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  width:20%;
 }
 .reveal-sort:after {
   content: '➕'
@@ -54,14 +65,13 @@ img {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  position: absolute;
   transition: all .7s ease-in-out;
+ 
 }
-
 
 .shown {
   height: 200px;
-  
+  background-color: white;
 }
 
 

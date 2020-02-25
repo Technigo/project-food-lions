@@ -13,20 +13,21 @@
     <header>
         <h1>Pizza in Dublin</h1>
     </header>
+    <section class="main-container">
+        <div class="selecting">
     <div class="reveal-sort" id="showSort">
         <p>Sort</p>
     </div>
-    <div class="hidden" id="sort-options">
-        <input type="radio" id="highestFirst" name="sort-option">
-        <label for="highestFirst">Most Expensive</label>
-        <input type="radio" id="lowestFirst" name="sort-option">
-        <label for="lowestFirst">Least Expensive</label>
-    </div>
+        <div class="hidden" id="sort-options">
+            <input type="radio" id="highestFirst" name="sort-option">
+            <label for="highestFirst">Most Expensive</label>
+            <input type="radio" id="lowestFirst" name="sort-option">
+            <label for="lowestFirst">Least Expensive</label>
+        </div>
+        </div>
+        <div class="restaurant-container" id="restaurants"></div>
+    </section>
 
-
-
-
-    <div class="restaurant-container" id="restaurants"></div>
     <script src="script.js"></script>
 </body>
 
