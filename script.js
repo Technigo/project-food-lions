@@ -26,6 +26,11 @@ const sortPrice = (info) => {
 
 };
 
+const accordion = () => {
+    document.getElementById('sort-options').classList.toggle('options-shown')
+}
+
+document.getElementById('showSort').onclick = accordion
 
 
 fetch('https://developers.zomato.com/api/v2.1/search?entity_id=91&entity_type=city&cuisines=82',

@@ -9,10 +9,15 @@
 </head>
 
 <body>
-    <input type="radio" id="highestFirst" name="sort-option">
-    <label for="highestFirst">Most Expensive</label>
-    <input type="radio" id="lowestFirst" name="sort-option">
-    <label for="lowestFirst">Least Expensive</label>
+    <div class="reveal-sort">
+        <p>Sort</p><span id="showSort">➕</span>
+    </div>
+    <div class="options-shown" id="sort-options">
+        <input type="radio" id="highestFirst" name="sort-option">
+        <label for="highestFirst">Most Expensive</label>
+        <input type="radio" id="lowestFirst" name="sort-option">
+        <label for="lowestFirst">Least Expensive</label>
+    </div>
 
 
     <div class="restaurant-container" id="restaurants"></div>

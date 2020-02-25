@@ -19,6 +19,29 @@ img {
   width: 100%;
 }
 
+.reveal-sort {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width:20%;
+}
+
+.sort-options {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.options-shown {
+  max-height: 200;
+}
+
+.options-shown + .sort-options {
+  max-height: 200px;
+  overflow: visible;
+}
+
 /* Media Queries Bigger Screens */
 @media(min-width: 650px) {
   .restaurant-container {
