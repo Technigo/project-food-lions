@@ -1,18 +1,35 @@
 *, *::before, *::after { box-sizing: inherit; }
 
+body {
+  font-family: 'Nunito'
+}
 .restaurant-container {
-  background-color: lightyellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+}
+
+h1 {
+  font-family: 'Krona One';  
+}
+
+h2 {
+  font-family: 'Krona One'; 
+  font-size: 12px;
+}
+
+h3 {
+color: #32caa9;
 }
 
 .card {
   width: auto;
-  background-color: yellow;
   margin: 16px;
   text-align: center;
+}
+
+.rating {
+  color: rgb(113, 247, 195);
 }
 
 img {
@@ -51,7 +68,6 @@ img {
 /* Media Queries Bigger Screens */
 @media(min-width: 650px) {
   .restaurant-container {
-    background-color: lightblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
