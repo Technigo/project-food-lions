@@ -1,0 +1,42 @@
+*, *::before, *::after { box-sizing: inherit; }
+
+.restaurant-container {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.card {
+  width: auto;
+  background-color: yellow;
+  margin: 16px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* Media Queries Bigger Screens */
+@media(min-width: 650px) {
+  .restaurant-container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+  }
+  
+  .card {
+    width: 40%;
+    flex-grow: 1;
+  }
+}
+
+@media(min-width: 1025px) {
+  .card {
+    width: 20%;
+    flex-grow: 1;
+  }
+}
