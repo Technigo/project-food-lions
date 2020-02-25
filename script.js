@@ -47,11 +47,11 @@ fetch('https://developers.zomato.com/api/v2.1/search?entity_id=91&entity_type=ci
         document.getElementById('lowestFirst').addEventListener("change", () => sortPrice(info.restaurants))
 
         info.restaurants.forEach(item => {
-            restaurants.innerHTML += `<section class="card"><p> Restaurant name: ${item.restaurant.name} 
+            restaurants.innerHTML += `<section class="card"><img  src="${item.restaurant.thumb}"><h2>${item.restaurant.name}</h2><p> 
          Average cost: ${item.restaurant.currency} ${item.restaurant.average_cost_for_two / 2}
          Address ${item.restaurant.location.address}
-         </p> <img  src="${item.restaurant.thumb}">
-         <p>Review: ${item.restaurant.user_rating.aggregate_rating} /5 ${item.restaurant.user_rating.rating_text}</p></section>
+         </p>
+         <p class="rating">★ ${item.restaurant.user_rating.aggregate_rating} /5 ${item.restaurant.user_rating.rating_text}</p></section>
          `
         });
 
